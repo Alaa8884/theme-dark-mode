@@ -135,8 +135,13 @@ nav .list li a:hover {
 }
 .info h1 {
   color: var(--second-backg-color);
-  font-size: 50px;
+  font-size: 3.125rem;
   margin: 10px  ;
+}
+@media (min-width: 300px) and (max-width: 411px){
+  .info h1 {
+    font-size: 2rem;
+  }
 }
 .info h1 span {
   color: #ff4321;
@@ -145,8 +150,31 @@ nav .list li a:hover {
   color: var(--second-backg-color);
   line-height: 1.7;
   margin-bottom: 10px;
+  padding: 5px;
 }
-.info a {
+@media (min-width: 300px) and (max-width: 411px) {
+  .info p {
+    margin: 0 5px;
+  }
+}
+.info .btn-box {
+  width: 200px;
+  margin: 5px -5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px 0;
+  
+}
+@media (min-width: 300px) and (max-width: 411px) {
+  .info .btn-box {
+    width: 100%;
+    margin: 5px 5px;
+    flex-direction: row;
+    gap: 0 10px;
+  }
+}
+.info #download {
   display: block;
   width: 150px;
   text-decoration: none;
@@ -160,11 +188,7 @@ nav .list li a:hover {
   -o-border-radius: 6px;
   text-align: center;
 }
-.social-icon {
-  position: absolute;
-  left: 5%;
-  top: 85%;
-}
+
 @media (max-width: 767px) {
   .social-icon {
     left: 65%;
@@ -213,8 +237,8 @@ nav .list li a:hover {
 }
 @media (max-width: 767px) {
   .images  {
-    width: 76%;
-    height: 80%;
+    width: 50%;
+    height: 70%;
     bottom: -15%;
   }
   .images img {
@@ -222,7 +246,7 @@ nav .list li a:hover {
     bottom: 30%;
   }
   .images:hover img:nth-child(1) {
-  bottom: 200px;
+  bottom: 150px;
   }
   .images:hover :nth-child(2) {
     left: 55%;
@@ -236,6 +260,22 @@ nav .list li a:hover {
   .images img {
     height: 80%;
   }
+}
+@media (min-width: 300px) and (max-width: 411px) {
+  .images  {
+    width: 30%;
+    height: 70%;
+    bottom: -100px;
+  }
+  .images img {
+    height: 50%;
+  }
+  images:hover :nth-child(1) {
+  bottom: -60px;
+}
+.images:hover :nth-child(2) {
+  left: 60%;
+}
 }
 .images:hover :nth-child(1) {
   bottom: 40px;
